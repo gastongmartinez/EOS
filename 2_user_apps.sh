@@ -71,12 +71,12 @@ if [ "$AS" == 'S' ]; then
         mkdir ~/Apps
     fi
     cd ~/Apps || return
-    wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2020.3.1.25/android-studio-2020.3.1.25-linux.tar.gz 
-    tar -xzf android-studio-2020.3.1.25-linux.tar.gz
-    rm android-studio-2020.3.1.25-linux.tar.gz
-    wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_2.5.3-stable.tar.xz
-    tar xf flutter_linux_2.5.3-stable.tar.xz
-    rm flutter_linux_2.5.3-stable.tar.xz
+    wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2020.3.1.25/android-studio-2020.3.1.26-linux.tar.gz 
+    tar -xzf android-studio-2020.3.1.26-linux.tar.gz
+    rm android-studio-2020.3.1.26-linux.tar.gz
+    wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_2.8.1-stable.tar.xz
+    tar xf flutter_linux_2.8.1-stable.tar.xz
+    rm flutter_linux_2.8.1-stable.tar.xz
     cd ~ || return
 fi
 
@@ -95,8 +95,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.local/share/
 {
     echo 'source ~/.local/share/zsh/powerlevel10k/powerlevel10k.zsh-theme'
     echo 'source /usr/share/autojump/autojump.zsh'
-    echo 'source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh'
-    echo 'source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
+    echo 'source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh'
+    echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
     echo -e '\n# History in cache directory:'
     echo 'HISTSIZE=10000'
     echo 'SAVEHIST=10000'
