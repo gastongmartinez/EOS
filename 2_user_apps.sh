@@ -44,9 +44,6 @@ AURPKGS=(
     'font-manager'
     'ulauncher'
     'polybar'
-    'whitesur-gtk-theme'
-    'whitesur-icon-theme-git'
-    'whitesur-cursor-theme-git'
 )
 for AUR in "${AURPKGS[@]}"; do
     yay -S "$AUR" --noconfirm --needed
