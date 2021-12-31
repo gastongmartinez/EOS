@@ -44,6 +44,8 @@ AURPKGS=(
     'font-manager'
     'ulauncher'
     'polybar'
+    'timeshift'
+    'timeshift-autosnap'
 )
 for AUR in "${AURPKGS[@]}"; do
     yay -S "$AUR" --noconfirm --needed
