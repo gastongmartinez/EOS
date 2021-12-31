@@ -11,11 +11,12 @@ fi
 read -rp "Instalar Extensiones Gnome? (S/N): " EG
 if [ "$EG" == 'S' ]; then    
     EXTS=(
+        'chrome-gnome-shell'
         'gnome-shell-extension-arc-menu'
         'gnome-shell-extension-dash-to-dock'
         'gnome-shell-extension-dash-to-panel'
         'gnome-shell-extension-vitals-git'
-        'gnome-shell-extension-blur-my-shell-git'
+        #'gnome-shell-extension-blur-my-shell-git'
         'gnome-shell-extension-systemd-manager'
         'gnome-shell-extension-tiling-assistant'
         'gnome-shell-extension-tweaks-system-menu-git'
@@ -61,6 +62,13 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 # NeoVim
 mkdir -p ~/.config/nvim
 git clone https://github.com/gastongmartinez/Nvim ~/.config/nvim
+
+# Blur my shell
+git clone https://github.com/aunetx/blur-my-shell
+cd blur-my-shell || return
+make install
+cd ~ || return
+rm -rf blur-my-shell
 
 # Android
 read -rp "Instalar Android Studio? (S/N): " AS
