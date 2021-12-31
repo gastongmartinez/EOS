@@ -23,7 +23,6 @@ if [ "$EG" == 'S' ]; then
         'gnome-shell-extension-sound-output-device-chooser'
         'gnome-shell-extension-no-overview'
         'gnome-shell-extension-pop-shell'
-        
     )
     for EXT in "${EXTS[@]}"; do
         yay -S "$EXT" --noconfirm --needed
@@ -70,7 +69,7 @@ if [ "$AS" == 'S' ]; then
         mkdir ~/Apps
     fi
     cd ~/Apps || return
-    wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2020.3.1.25/android-studio-2020.3.1.26-linux.tar.gz 
+    wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2020.3.1.26/android-studio-2020.3.1.26-linux.tar.gz
     tar -xzf android-studio-2020.3.1.26-linux.tar.gz
     rm android-studio-2020.3.1.26-linux.tar.gz
     wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_2.8.1-stable.tar.xz
