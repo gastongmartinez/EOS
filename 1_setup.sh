@@ -325,3 +325,10 @@ firewall-cmd --add-service=cockpit --permanent
 
 # Wallpapers
 git clone https://github.com/gastongmartinez/wallpapers.git /usr/share/backgrounds/wallpapers/
+
+# Resolucion Grub
+read -rp "Configurar Grub en 1920x1080? (S/N): " GB
+if [ "$GB" == 'S' ]; then
+    sed -i 's/auto/1920x1080x32/g' "/etc/default/grub"
+    grub-mkconfig -o /boot/grub/grub.cfg
+fi
