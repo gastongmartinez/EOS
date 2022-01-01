@@ -60,6 +60,8 @@ dconf write /org/gnome/mutter/overlay-key "'Super_R'"
 dconf write /org/gnome/shell/extensions/arcmenu/pinned-app-list "['Web', '', 'org.gnome.Epiphany.desktop', 'Terminal', '', 'orggnome.Terminal. desktop', 'ArcMenu Settings', 'ArcMenu_ArcMenuIcon', 'gnome-extensions prefs arcmenu@arcmenu.com']"
 dconf write /org/gnome/shell/extensions/arcmenu/menu-hotkey "'Undefined'"
 dconf write /org/gnome/desktop/wm/keybindings/panel-main-menu "['Super_L']"
+dconf write /org/gnome/shell/extensions/arcmenu/menu-button-icon "'Distro_Icon'"
+dconf write /org/gnome/shell/extensions/arcmenu/distro-icon 6
 
 # Quake-mode
 dconf write /com/github/repsac-by/quake-mode/quake-mode-app "'Alacritty.desktop'"
