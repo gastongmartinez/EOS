@@ -237,6 +237,7 @@ PACMANPKGS=(
     'vlc'
     'clementine'
     'mpv'
+    'handbrake'
 
     #### Juegos ####
     'chromium-bsu'
