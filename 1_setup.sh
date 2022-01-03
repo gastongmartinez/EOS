@@ -327,6 +327,14 @@ firewall-cmd --add-service=cockpit --permanent
 # Wallpapers
 git clone https://github.com/gastongmartinez/wallpapers.git /usr/share/backgrounds/wallpapers/
 
+{
+    echo "[User]"
+    echo "Icon=/var/lib/AccountsService/icons/$USUARIO"
+    echo "SystemAccount=false    "
+} > /var/lib/AccountsService/users/"$USUARIO"
+
+cp /usr/share/backgrounds/wallpapers/Fringe/fibonacci3.jpg /var/lib/AccountsService/icons/"$USUARIO"
+
 # Resolucion Grub
 read -rp "Configurar Grub en 1920x1080? (S/N): " GB
 if [ "$GB" == 'S' ]; then

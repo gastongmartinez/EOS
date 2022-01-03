@@ -18,7 +18,7 @@ fi
 ############################################# Tema WhiteSur #################################################################################
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
 cd WhiteSur-gtk-theme || return
-./install.sh -c dark -c light -i fedora -N glassy
+./install.sh -c dark -c light -i arch -N glassy
 ./tweaks.sh -f
 sudo ./tweaks.sh -g -b "/usr/share/backgrounds/wallpapers/Landscapes/landscapes 01.jpg"
 cd ..
