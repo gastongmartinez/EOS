@@ -23,7 +23,7 @@ if [ "$EG" == 'S' ]; then
         'gnome-shell-extension-quake-mode-git'
         'gnome-shell-extension-sound-output-device-chooser'
         'gnome-shell-extension-no-overview'
-        'gnome-shell-extension-pop-shell'
+        'gnome-shell-extension-pop-shell-git'
     )
     for EXT in "${EXTS[@]}"; do
         yay -S "$EXT" --noconfirm --needed
