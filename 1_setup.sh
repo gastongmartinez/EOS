@@ -308,8 +308,6 @@ fi
 
 # Firewall
 systemctl enable --now firewalld.service
-firewall-cmd --set-default-zone=public
-firewall-cmd --add-service=ssh --permanent
 
 # Cockpit
 systemctl enable --now cockpit.socket
