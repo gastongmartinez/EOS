@@ -64,15 +64,6 @@ then
     pacman -S xf86-input-libinput --noconfirm --needed
 fi
 
-# PowerManagement
-read -rp "Instalar PowerMangement (S/N): " PM
-if [ "$PM" == "S" ];
-then
-    pacman -S tlp --noconfirm  --needed
-    pacman -S powertop --noconfirm --needed
-    systemctl enable tlp          
-fi
-
 # ACPI 
 read -rp "Instalar ACPI (S/N): " AC
 if [ "$AC" == "S" ];
@@ -225,6 +216,7 @@ PACMANPKGS=(
     'dconf-editor'
     'cockpit'
     'cockpit-machines'
+    'powertop'
     
     #### Editores ####
     'neovim'
